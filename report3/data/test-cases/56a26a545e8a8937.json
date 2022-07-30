@@ -1,0 +1,82 @@
+{
+  "uid" : "56a26a545e8a8937",
+  "name" : "test_check_ccy[USD]",
+  "fullName" : "main#test_check_ccy",
+  "historyId" : "d58236b451eb4668248064c062a71731",
+  "time" : {
+    "start" : 1659172288776,
+    "stop" : 1659172289027,
+    "duration" : 251
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "d851958fc0d929e9",
+      "name" : "stdout",
+      "source" : "d851958fc0d929e9.txt",
+      "type" : "text/plain",
+      "size" : 227
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Check ccy"
+  }, {
+    "name" : "severity",
+    "value" : "Blocker"
+  }, {
+    "name" : "suite",
+    "value" : "main"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Pro-Eugene.local"
+  }, {
+    "name" : "thread",
+    "value" : "3794-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "ccy",
+    "value" : "'USD'"
+  } ],
+  "links" : [ {
+    "name" : "https://testrail.ru",
+    "url" : "https://testrail.ru",
+    "type" : "test_case"
+  }, {
+    "name" : "jira link",
+    "url" : "jira link",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "56a26a545e8a8937.json",
+  "parameterValues" : [ "'USD'" ]
+}

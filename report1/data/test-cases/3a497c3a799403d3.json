@@ -1,0 +1,76 @@
+{
+  "uid" : "3a497c3a799403d3",
+  "name" : "test_req[RUB]",
+  "fullName" : "main#test_req",
+  "historyId" : "dd17ab860083a6a0de9f52750b5a75e9",
+  "time" : {
+    "start" : 1659171558436,
+    "stop" : 1659171558666,
+    "duration" : 230
+  },
+  "status" : "broken",
+  "statusMessage" : "ValueError: could not convert string to float: ''",
+  "statusTrace" : "ccy = 'RUB'\n\n    @pytest.mark.parametrize('ccy', ['USD', 'EUR', 'BTC', 'RUB'])\n    def test_req(ccy):\n        r = requests.get('https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5')\n        print(r.json())\n        item = r.json()\n        sale = [x.get(\"sale\") for x in item if x.get('ccy') == ccy]\n        sale = str(sale)\n        sale = sale[2: -4]\n>       sale = float(sale)\nE       ValueError: could not convert string to float: ''\n\nmain.py:15: ValueError",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "ValueError: could not convert string to float: ''",
+    "statusTrace" : "ccy = 'RUB'\n\n    @pytest.mark.parametrize('ccy', ['USD', 'EUR', 'BTC', 'RUB'])\n    def test_req(ccy):\n        r = requests.get('https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5')\n        print(r.json())\n        item = r.json()\n        sale = [x.get(\"sale\") for x in item if x.get('ccy') == ccy]\n        sale = str(sale)\n        sale = sale[2: -4]\n>       sale = float(sale)\nE       ValueError: could not convert string to float: ''\n\nmain.py:15: ValueError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "8443c4b16817c3cb",
+      "name" : "stdout",
+      "source" : "8443c4b16817c3cb.txt",
+      "type" : "text/plain",
+      "size" : 227
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "main"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Pro-Eugene.local"
+  }, {
+    "name" : "thread",
+    "value" : "3565-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "ccy",
+    "value" : "'RUB'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "3a497c3a799403d3.json",
+  "parameterValues" : [ "'RUB'" ]
+}

@@ -1,0 +1,213 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "children" : [ {
+    "name" : "Check ccy",
+    "children" : [ {
+      "name" : "test_check_ccy[USD]",
+      "uid" : "56a26a545e8a8937",
+      "parentUid" : "fcf518ba07b1decc7e8b91655419b01c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1659172288776,
+        "stop" : 1659172289027,
+        "duration" : 251
+      },
+      "flaky" : false,
+      "parameters" : [ "'USD'" ]
+    }, {
+      "name" : "test_check_ccy[EUR]",
+      "uid" : "bd1267cffad89742",
+      "parentUid" : "fcf518ba07b1decc7e8b91655419b01c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1659172289031,
+        "stop" : 1659172289263,
+        "duration" : 232
+      },
+      "flaky" : false,
+      "parameters" : [ "'EUR'" ]
+    }, {
+      "name" : "test_check_ccy[BTC]",
+      "uid" : "b355fc572aeed50f",
+      "parentUid" : "fcf518ba07b1decc7e8b91655419b01c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1659172289266,
+        "stop" : 1659172289500,
+        "duration" : 234
+      },
+      "flaky" : false,
+      "parameters" : [ "'BTC'" ]
+    }, {
+      "name" : "test_check_ccy[RUB]",
+      "uid" : "5078fee313433f26",
+      "parentUid" : "fcf518ba07b1decc7e8b91655419b01c",
+      "status" : "broken",
+      "time" : {
+        "start" : 1659172289503,
+        "stop" : 1659172289742,
+        "duration" : 239
+      },
+      "flaky" : false,
+      "parameters" : [ "'RUB'" ]
+    }, {
+      "name" : "test_req1",
+      "uid" : "47a1354823d290ea",
+      "parentUid" : "fcf518ba07b1decc7e8b91655419b01c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1659172289773,
+        "stop" : 1659172300015,
+        "duration" : 10242
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_req2",
+      "uid" : "bb930d9880879d33",
+      "parentUid" : "fcf518ba07b1decc7e8b91655419b01c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1659172300018,
+        "stop" : 1659172300257,
+        "duration" : 239
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "fcf518ba07b1decc7e8b91655419b01c"
+  }, {
+    "name" : "Check test input",
+    "children" : [ {
+      "name" : "test_parametrize_with_mark_single[1]",
+      "uid" : "6952e118c1968dc1",
+      "parentUid" : "13de9ddaa052611550079b31412c5f54",
+      "status" : "failed",
+      "time" : {
+        "start" : 1659172300259,
+        "stop" : 1659172300260,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "parameters" : [ "1" ]
+    }, {
+      "name" : "test_parametrize_with_mark_single[2]",
+      "uid" : "80fa7063628a8e74",
+      "parentUid" : "13de9ddaa052611550079b31412c5f54",
+      "status" : "failed",
+      "time" : {
+        "start" : 1659172300271,
+        "stop" : 1659172300271,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "parameters" : [ "2" ]
+    }, {
+      "name" : "test_parametrize_with_mark_single[3]",
+      "uid" : "c27923d28195846f",
+      "parentUid" : "13de9ddaa052611550079b31412c5f54",
+      "status" : "passed",
+      "time" : {
+        "start" : 1659172300276,
+        "stop" : 1659172300276,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "parameters" : [ "3" ]
+    } ],
+    "uid" : "13de9ddaa052611550079b31412c5f54"
+  }, {
+    "name" : "test feature 1 ",
+    "children" : [ {
+      "name" : "test_parametrize_with_multiply_mark[Three plus five]",
+      "uid" : "13ff5ea8399efabb",
+      "parentUid" : "90a1ea0a788ec307ad82601b2a961365",
+      "status" : "passed",
+      "time" : {
+        "start" : 1659172300279,
+        "stop" : 1659172300279,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "parameters" : [ "8", "'3+5'" ]
+    }, {
+      "name" : "test_parametrize_with_multiply_mark[six plus nine]",
+      "uid" : "6e614f36cec790da",
+      "parentUid" : "90a1ea0a788ec307ad82601b2a961365",
+      "status" : "passed",
+      "time" : {
+        "start" : 1659172300282,
+        "stop" : 1659172300282,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "parameters" : [ "15", "'6+9'" ]
+    }, {
+      "name" : "test_parametrize_with_multiply_mark[five by five]",
+      "uid" : "c781857c26f5d06d",
+      "parentUid" : "90a1ea0a788ec307ad82601b2a961365",
+      "status" : "failed",
+      "time" : {
+        "start" : 1659172300285,
+        "stop" : 1659172300285,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "parameters" : [ "30", "'5*5'" ]
+    } ],
+    "uid" : "90a1ea0a788ec307ad82601b2a961365"
+  }, {
+    "name" : "test feature",
+    "children" : [ {
+      "name" : "test_foo[2-0]",
+      "uid" : "924d4aa4a14c5db",
+      "parentUid" : "bef84ebcb0ec4a0c100a62a89bccd8d1",
+      "status" : "failed",
+      "time" : {
+        "start" : 1659172300294,
+        "stop" : 1659172300294,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "parameters" : [ "0", "2" ]
+    }, {
+      "name" : "test_foo[2-1]",
+      "uid" : "8108ef4cd1b938d9",
+      "parentUid" : "bef84ebcb0ec4a0c100a62a89bccd8d1",
+      "status" : "failed",
+      "time" : {
+        "start" : 1659172300304,
+        "stop" : 1659172300304,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "parameters" : [ "1", "2" ]
+    }, {
+      "name" : "test_foo[3-0]",
+      "uid" : "68dba5c186bca2a8",
+      "parentUid" : "bef84ebcb0ec4a0c100a62a89bccd8d1",
+      "status" : "failed",
+      "time" : {
+        "start" : 1659172300318,
+        "stop" : 1659172300319,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "parameters" : [ "0", "3" ]
+    }, {
+      "name" : "test_foo[3-1]",
+      "uid" : "a7292d98bfdaacc7",
+      "parentUid" : "bef84ebcb0ec4a0c100a62a89bccd8d1",
+      "status" : "failed",
+      "time" : {
+        "start" : 1659172300334,
+        "stop" : 1659172300335,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "parameters" : [ "1", "3" ]
+    } ],
+    "uid" : "bef84ebcb0ec4a0c100a62a89bccd8d1"
+  } ],
+  "name" : "behaviors"
+}

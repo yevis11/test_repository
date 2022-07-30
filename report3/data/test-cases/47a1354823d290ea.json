@@ -1,0 +1,63 @@
+{
+  "uid" : "47a1354823d290ea",
+  "name" : "test_req1",
+  "fullName" : "main#test_req1",
+  "historyId" : "2ba460fb218c329cdcacb4573cc0d0e7",
+  "time" : {
+    "start" : 1659172289773,
+    "stop" : 1659172300015,
+    "duration" : 10242
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Check ccy"
+  }, {
+    "name" : "severity",
+    "value" : "Blocker"
+  }, {
+    "name" : "suite",
+    "value" : "main"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Pro-Eugene.local"
+  }, {
+    "name" : "thread",
+    "value" : "3794-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "https://testrail.ru",
+    "url" : "https://testrail.ru",
+    "type" : "test_case"
+  }, {
+    "name" : "jira link",
+    "url" : "jira link",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "47a1354823d290ea.json",
+  "parameterValues" : [ ]
+}

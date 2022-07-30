@@ -1,0 +1,137 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "ValueError: could not convert string to float: ''",
+      "children" : [ {
+        "name" : "test_check_ccy[RUB]",
+        "uid" : "f33801f9cb37632a",
+        "parentUid" : "d91219f32ce09682afd36f7884536b73",
+        "status" : "broken",
+        "time" : {
+          "start" : 1659172488201,
+          "stop" : 1659172488447,
+          "duration" : 246
+        },
+        "flaky" : false,
+        "parameters" : [ "'RUB'" ]
+      } ],
+      "uid" : "d91219f32ce09682afd36f7884536b73"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 1 == 3",
+      "children" : [ {
+        "name" : "test_parametrize_with_mark_single[1]",
+        "uid" : "3206387e897f2d00",
+        "parentUid" : "3cf866d47a780b101bbe5ac274604b7c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1659172498967,
+          "stop" : 1659172498967,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ "1" ]
+      }, {
+        "name" : "test_foo[3-1]",
+        "uid" : "f2bb4bfd01bd6de5",
+        "parentUid" : "3cf866d47a780b101bbe5ac274604b7c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1659172499045,
+          "stop" : 1659172499045,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ "1", "3" ]
+      } ],
+      "uid" : "3cf866d47a780b101bbe5ac274604b7c"
+    }, {
+      "name" : "AssertionError: assert 2 == 3",
+      "children" : [ {
+        "name" : "test_parametrize_with_mark_single[2]",
+        "uid" : "147bd93d77b525b9",
+        "parentUid" : "94f84a64f476d0268e3f313c66a85755",
+        "status" : "failed",
+        "time" : {
+          "start" : 1659172498978,
+          "stop" : 1659172498978,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ "2" ]
+      } ],
+      "uid" : "94f84a64f476d0268e3f313c66a85755"
+    }, {
+      "name" : "AssertionError: assert 25 == 30\n +  where 25 = eval('5*5')",
+      "children" : [ {
+        "name" : "test_parametrize_with_multiply_mark[five by five]",
+        "uid" : "39da1f453ef61be7",
+        "parentUid" : "70f1327fee1b938e81bbda4e6bfd40d1",
+        "status" : "failed",
+        "time" : {
+          "start" : 1659172498995,
+          "stop" : 1659172498995,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ "30", "'5*5'" ]
+      } ],
+      "uid" : "70f1327fee1b938e81bbda4e6bfd40d1"
+    }, {
+      "name" : "AssertionError: assert 0 == 2",
+      "children" : [ {
+        "name" : "test_foo[2-0]",
+        "uid" : "2dab0dbf224b8ee5",
+        "parentUid" : "97c418fc19b873723e78392ef7f8a96c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1659172499005,
+          "stop" : 1659172499005,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ "0", "2" ]
+      } ],
+      "uid" : "97c418fc19b873723e78392ef7f8a96c"
+    }, {
+      "name" : "AssertionError: assert 1 == 2",
+      "children" : [ {
+        "name" : "test_foo[2-1]",
+        "uid" : "eb4d6060f569ccb",
+        "parentUid" : "d89f5ad50f342bab320c0753c9baac45",
+        "status" : "failed",
+        "time" : {
+          "start" : 1659172499018,
+          "stop" : 1659172499018,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ "1", "2" ]
+      } ],
+      "uid" : "d89f5ad50f342bab320c0753c9baac45"
+    }, {
+      "name" : "AssertionError: assert 0 == 3",
+      "children" : [ {
+        "name" : "test_foo[3-0]",
+        "uid" : "818f0aaf333e55e8",
+        "parentUid" : "8a1f2aafaa428885167e7cd540df7a36",
+        "status" : "failed",
+        "time" : {
+          "start" : 1659172499035,
+          "stop" : 1659172499035,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ "0", "3" ]
+      } ],
+      "uid" : "8a1f2aafaa428885167e7cd540df7a36"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}

@@ -1,0 +1,90 @@
+{
+  "uid" : "5078fee313433f26",
+  "name" : "test_check_ccy[RUB]",
+  "fullName" : "main#test_check_ccy",
+  "historyId" : "efe0e8b2644124ec98e191987629da6d",
+  "time" : {
+    "start" : 1659172289503,
+    "stop" : 1659172289742,
+    "duration" : 239
+  },
+  "status" : "broken",
+  "statusMessage" : "ValueError: could not convert string to float: ''",
+  "statusTrace" : "ccy = 'RUB'\n\n    @allure.feature('Check ccy')\n    @allure.severity('Blocker')\n    @allure.issue('jira link')\n    @allure.testcase('https://testrail.ru')\n    @pytest.mark.parametrize('ccy', ['USD', 'EUR', 'BTC', 'RUB'])\n    def test_check_ccy(ccy):\n        r = requests.get('https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5')\n        print(r.json())\n        item = r.json()\n        sale = [x.get(\"sale\") for x in item if x.get('ccy') == ccy]\n        sale = str(sale)\n        sale = sale[2: -4]\n>       sale = float(sale)\nE       ValueError: could not convert string to float: ''\n\nmain.py:20: ValueError",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "ValueError: could not convert string to float: ''",
+    "statusTrace" : "ccy = 'RUB'\n\n    @allure.feature('Check ccy')\n    @allure.severity('Blocker')\n    @allure.issue('jira link')\n    @allure.testcase('https://testrail.ru')\n    @pytest.mark.parametrize('ccy', ['USD', 'EUR', 'BTC', 'RUB'])\n    def test_check_ccy(ccy):\n        r = requests.get('https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5')\n        print(r.json())\n        item = r.json()\n        sale = [x.get(\"sale\") for x in item if x.get('ccy') == ccy]\n        sale = str(sale)\n        sale = sale[2: -4]\n>       sale = float(sale)\nE       ValueError: could not convert string to float: ''\n\nmain.py:20: ValueError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "6a290f30d7897ce8",
+      "name" : "stdout",
+      "source" : "6a290f30d7897ce8.txt",
+      "type" : "text/plain",
+      "size" : 227
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Check ccy"
+  }, {
+    "name" : "severity",
+    "value" : "Blocker"
+  }, {
+    "name" : "suite",
+    "value" : "main"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Pro-Eugene.local"
+  }, {
+    "name" : "thread",
+    "value" : "3794-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "ccy",
+    "value" : "'RUB'"
+  } ],
+  "links" : [ {
+    "name" : "https://testrail.ru",
+    "url" : "https://testrail.ru",
+    "type" : "test_case"
+  }, {
+    "name" : "jira link",
+    "url" : "jira link",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "5078fee313433f26.json",
+  "parameterValues" : [ "'RUB'" ]
+}

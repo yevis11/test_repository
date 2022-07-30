@@ -1,0 +1,201 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "main",
+    "children" : [ {
+      "name" : "test_req[USD]",
+      "uid" : "dec58eb7f39139aa",
+      "parentUid" : "f151cf100cb070e1edb75fd524e6645b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1659171557697,
+        "stop" : 1659171557954,
+        "duration" : 257
+      },
+      "flaky" : false,
+      "parameters" : [ "'USD'" ]
+    }, {
+      "name" : "test_req[EUR]",
+      "uid" : "9e61ef79c4355179",
+      "parentUid" : "f151cf100cb070e1edb75fd524e6645b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1659171557957,
+        "stop" : 1659171558191,
+        "duration" : 234
+      },
+      "flaky" : false,
+      "parameters" : [ "'EUR'" ]
+    }, {
+      "name" : "test_req[BTC]",
+      "uid" : "229d3496951bd09b",
+      "parentUid" : "f151cf100cb070e1edb75fd524e6645b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1659171558195,
+        "stop" : 1659171558434,
+        "duration" : 239
+      },
+      "flaky" : false,
+      "parameters" : [ "'BTC'" ]
+    }, {
+      "name" : "test_req[RUB]",
+      "uid" : "3a497c3a799403d3",
+      "parentUid" : "f151cf100cb070e1edb75fd524e6645b",
+      "status" : "broken",
+      "time" : {
+        "start" : 1659171558436,
+        "stop" : 1659171558666,
+        "duration" : 230
+      },
+      "flaky" : false,
+      "parameters" : [ "'RUB'" ]
+    }, {
+      "name" : "test_req1",
+      "uid" : "1c34497418086353",
+      "parentUid" : "f151cf100cb070e1edb75fd524e6645b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1659171558702,
+        "stop" : 1659171558984,
+        "duration" : 282
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_req2",
+      "uid" : "d6158db6d53467b4",
+      "parentUid" : "f151cf100cb070e1edb75fd524e6645b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1659171558987,
+        "stop" : 1659171559221,
+        "duration" : 234
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_parametrize_with_mark_single[1]",
+      "uid" : "8eb4ae0491471c4e",
+      "parentUid" : "f151cf100cb070e1edb75fd524e6645b",
+      "status" : "failed",
+      "time" : {
+        "start" : 1659171559223,
+        "stop" : 1659171559223,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "parameters" : [ "1" ]
+    }, {
+      "name" : "test_parametrize_with_mark_single[2]",
+      "uid" : "eb14f3805507c5c3",
+      "parentUid" : "f151cf100cb070e1edb75fd524e6645b",
+      "status" : "failed",
+      "time" : {
+        "start" : 1659171559233,
+        "stop" : 1659171559234,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "parameters" : [ "2" ]
+    }, {
+      "name" : "test_parametrize_with_mark_single[3]",
+      "uid" : "2016854cf20694b5",
+      "parentUid" : "f151cf100cb070e1edb75fd524e6645b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1659171559239,
+        "stop" : 1659171559239,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "parameters" : [ "3" ]
+    }, {
+      "name" : "test_parametrize_with_multiply_mark[Three plus five]",
+      "uid" : "d9a2017f70604c6a",
+      "parentUid" : "f151cf100cb070e1edb75fd524e6645b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1659171559243,
+        "stop" : 1659171559243,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "parameters" : [ "8", "'3+5'" ]
+    }, {
+      "name" : "test_parametrize_with_multiply_mark[six plus nine]",
+      "uid" : "6072094025dfc2a0",
+      "parentUid" : "f151cf100cb070e1edb75fd524e6645b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1659171559247,
+        "stop" : 1659171559247,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "parameters" : [ "15", "'6+9'" ]
+    }, {
+      "name" : "test_parametrize_with_multiply_mark[five by five]",
+      "uid" : "44ee982743972f0d",
+      "parentUid" : "f151cf100cb070e1edb75fd524e6645b",
+      "status" : "failed",
+      "time" : {
+        "start" : 1659171559250,
+        "stop" : 1659171559250,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "parameters" : [ "30", "'5*5'" ]
+    }, {
+      "name" : "test_foo[2-0]",
+      "uid" : "b167c9495b43809",
+      "parentUid" : "f151cf100cb070e1edb75fd524e6645b",
+      "status" : "failed",
+      "time" : {
+        "start" : 1659171559256,
+        "stop" : 1659171559256,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "parameters" : [ "0", "2" ]
+    }, {
+      "name" : "test_foo[2-1]",
+      "uid" : "1c2ab3eac543c452",
+      "parentUid" : "f151cf100cb070e1edb75fd524e6645b",
+      "status" : "failed",
+      "time" : {
+        "start" : 1659171559270,
+        "stop" : 1659171559271,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "parameters" : [ "1", "2" ]
+    }, {
+      "name" : "test_foo[3-0]",
+      "uid" : "d6cc6762fcad0383",
+      "parentUid" : "f151cf100cb070e1edb75fd524e6645b",
+      "status" : "failed",
+      "time" : {
+        "start" : 1659171559283,
+        "stop" : 1659171559283,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "parameters" : [ "0", "3" ]
+    }, {
+      "name" : "test_foo[3-1]",
+      "uid" : "fd6dba099b82957a",
+      "parentUid" : "f151cf100cb070e1edb75fd524e6645b",
+      "status" : "failed",
+      "time" : {
+        "start" : 1659171559296,
+        "stop" : 1659171559297,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "parameters" : [ "1", "3" ]
+    } ],
+    "uid" : "f151cf100cb070e1edb75fd524e6645b"
+  } ],
+  "name" : "packages"
+}

@@ -1,0 +1,75 @@
+{
+  "uid" : "39da1f453ef61be7",
+  "name" : "test_parametrize_with_multiply_mark[five by five]",
+  "fullName" : "main#test_parametrize_with_multiply_mark",
+  "historyId" : "e50864d7f8f7a20cf368abb9e264c736",
+  "time" : {
+    "start" : 1659172498995,
+    "stop" : 1659172498995,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 25 == 30\n +  where 25 = eval('5*5')",
+  "statusTrace" : "test_input = '5*5', expected = 30\n\n    @allure.feature('test feature 1 ')\n    @allure.severity('Major')\n    @allure.issue('jira link')\n    @allure.testcase('https://testrail.ru')\n    #параметризация нескольких параметров\n    @pytest.mark.parametrize(\"test_input, expected\", [(\"3+5\",  8), ('6+9', 15), ('5*5', 30)],\n                             ids= ['Three plus five', 'six plus nine', 'five by five'])\n    def test_parametrize_with_multiply_mark(test_input, expected):\n>       assert eval(test_input) == expected\nE       AssertionError: assert 25 == 30\nE        +  where 25 = eval('5*5')\n\nmain.py:57: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "Major"
+  }, {
+    "name" : "feature",
+    "value" : "test feature 1 "
+  }, {
+    "name" : "suite",
+    "value" : "main"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Pro-Eugene.local"
+  }, {
+    "name" : "thread",
+    "value" : "3851-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "expected",
+    "value" : "30"
+  }, {
+    "name" : "test_input",
+    "value" : "'5*5'"
+  } ],
+  "links" : [ {
+    "name" : "https://testrail.ru",
+    "url" : "https://testrail.ru",
+    "type" : "test_case"
+  }, {
+    "name" : "jira link",
+    "url" : "jira link",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "39da1f453ef61be7.json",
+  "parameterValues" : [ "30", "'5*5'" ]
+}

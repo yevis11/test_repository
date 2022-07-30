@@ -1,0 +1,213 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "main",
+    "children" : [ {
+      "name" : "test_check_ccy[USD]",
+      "uid" : "d88d874835f27366",
+      "parentUid" : "f151cf100cb070e1edb75fd524e6645b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1659172487439,
+        "stop" : 1659172487719,
+        "duration" : 280
+      },
+      "flaky" : false,
+      "parameters" : [ "'USD'" ]
+    }, {
+      "name" : "test_check_ccy[EUR]",
+      "uid" : "b1a94f1bf7f60f6e",
+      "parentUid" : "f151cf100cb070e1edb75fd524e6645b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1659172487723,
+        "stop" : 1659172487959,
+        "duration" : 236
+      },
+      "flaky" : false,
+      "parameters" : [ "'EUR'" ]
+    }, {
+      "name" : "test_check_ccy[BTC]",
+      "uid" : "87b60872947a4ad",
+      "parentUid" : "f151cf100cb070e1edb75fd524e6645b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1659172487963,
+        "stop" : 1659172488197,
+        "duration" : 234
+      },
+      "flaky" : false,
+      "parameters" : [ "'BTC'" ]
+    }, {
+      "name" : "test_check_ccy[RUB]",
+      "uid" : "f33801f9cb37632a",
+      "parentUid" : "f151cf100cb070e1edb75fd524e6645b",
+      "status" : "broken",
+      "time" : {
+        "start" : 1659172488201,
+        "stop" : 1659172488447,
+        "duration" : 246
+      },
+      "flaky" : false,
+      "parameters" : [ "'RUB'" ]
+    }, {
+      "name" : "test_req1",
+      "uid" : "a2ea8bb4f04451b2",
+      "parentUid" : "f151cf100cb070e1edb75fd524e6645b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1659172488481,
+        "stop" : 1659172498709,
+        "duration" : 10228
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_req2",
+      "uid" : "f253088e25f259e0",
+      "parentUid" : "f151cf100cb070e1edb75fd524e6645b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1659172498711,
+        "stop" : 1659172498964,
+        "duration" : 253
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_parametrize_with_mark_single[1]",
+      "uid" : "3206387e897f2d00",
+      "parentUid" : "f151cf100cb070e1edb75fd524e6645b",
+      "status" : "failed",
+      "time" : {
+        "start" : 1659172498967,
+        "stop" : 1659172498967,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "parameters" : [ "1" ]
+    }, {
+      "name" : "test_parametrize_with_mark_single[2]",
+      "uid" : "147bd93d77b525b9",
+      "parentUid" : "f151cf100cb070e1edb75fd524e6645b",
+      "status" : "failed",
+      "time" : {
+        "start" : 1659172498978,
+        "stop" : 1659172498978,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "parameters" : [ "2" ]
+    }, {
+      "name" : "test_parametrize_with_mark_single[3]",
+      "uid" : "9624eda8727749b7",
+      "parentUid" : "f151cf100cb070e1edb75fd524e6645b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1659172498984,
+        "stop" : 1659172498984,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "parameters" : [ "3" ]
+    }, {
+      "name" : "test_parametrize_with_multiply_mark[Three plus five]",
+      "uid" : "2da21f45e296d54",
+      "parentUid" : "f151cf100cb070e1edb75fd524e6645b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1659172498986,
+        "stop" : 1659172498986,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "parameters" : [ "8", "'3+5'" ]
+    }, {
+      "name" : "test_parametrize_with_multiply_mark[six plus nine]",
+      "uid" : "3d039552cdbf10cc",
+      "parentUid" : "f151cf100cb070e1edb75fd524e6645b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1659172498989,
+        "stop" : 1659172498991,
+        "duration" : 2
+      },
+      "flaky" : false,
+      "parameters" : [ "15", "'6+9'" ]
+    }, {
+      "name" : "test_parametrize_with_multiply_mark[five by five]",
+      "uid" : "39da1f453ef61be7",
+      "parentUid" : "f151cf100cb070e1edb75fd524e6645b",
+      "status" : "failed",
+      "time" : {
+        "start" : 1659172498995,
+        "stop" : 1659172498995,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "parameters" : [ "30", "'5*5'" ]
+    }, {
+      "name" : "test_foo[2-0]",
+      "uid" : "2dab0dbf224b8ee5",
+      "parentUid" : "f151cf100cb070e1edb75fd524e6645b",
+      "status" : "failed",
+      "time" : {
+        "start" : 1659172499005,
+        "stop" : 1659172499005,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "parameters" : [ "0", "2" ]
+    }, {
+      "name" : "test_foo[2-1]",
+      "uid" : "eb4d6060f569ccb",
+      "parentUid" : "f151cf100cb070e1edb75fd524e6645b",
+      "status" : "failed",
+      "time" : {
+        "start" : 1659172499018,
+        "stop" : 1659172499018,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "parameters" : [ "1", "2" ]
+    }, {
+      "name" : "test_foo[3-0]",
+      "uid" : "818f0aaf333e55e8",
+      "parentUid" : "f151cf100cb070e1edb75fd524e6645b",
+      "status" : "failed",
+      "time" : {
+        "start" : 1659172499035,
+        "stop" : 1659172499035,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "parameters" : [ "0", "3" ]
+    }, {
+      "name" : "test_foo[3-1]",
+      "uid" : "f2bb4bfd01bd6de5",
+      "parentUid" : "f151cf100cb070e1edb75fd524e6645b",
+      "status" : "failed",
+      "time" : {
+        "start" : 1659172499045,
+        "stop" : 1659172499045,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "parameters" : [ "1", "3" ]
+    }, {
+      "name" : "test_skip",
+      "uid" : "3d4b095112da5d3c",
+      "parentUid" : "f151cf100cb070e1edb75fd524e6645b",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1659172499060,
+        "stop" : 1659172499061,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "f151cf100cb070e1edb75fd524e6645b"
+  } ],
+  "name" : "packages"
+}

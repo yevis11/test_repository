@@ -1,0 +1,45 @@
+def test_req1():
+    r = requests.get('https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5')
+    assert r.status_code == 200
+
+def test_req2():
+   r = requests.get('https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5')
+    print(r.headers)
+    assert 'application/json' in r.headers['Content-Type']
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@pytest.mark.parametrize('test_input', [1,2,3])
+def test_parametrize_with_mark_single(test_input):
+    assert test_input==3
+
+#параметризация нескольких параметров
+@pytest.mark.parametrize("test_input, expected", [("3+5",  8), ('6+9', 15), ('5*5', 30)],
+                         ids= ['Three plus five', 'six plus nine', 'five by five'])
+def test_parametrize_with_multiply_mark(test_input, expected):
+    assert eval(test_input) == expected
+
+#Вложенная параметризация
+@pytest.mark.parametrize('x', [0,1])
+@pytest.mark.parametrize('y', [2,3])
+def test_foo(x,y):
+    assert  x == y
+
+
+
+

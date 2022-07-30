@@ -1,0 +1,61 @@
+{
+  "uid" : "d6cc6762fcad0383",
+  "name" : "test_foo[3-0]",
+  "fullName" : "main#test_foo",
+  "historyId" : "59dbe799bc883106a0c75c421d9db971",
+  "time" : {
+    "start" : 1659171559283,
+    "stop" : 1659171559283,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 0 == 3",
+  "statusTrace" : "x = 0, y = 3\n\n    @pytest.mark.parametrize('x', [0,1])\n    @pytest.mark.parametrize('y', [2,3])\n    def test_foo(x,y):\n>       assert  x == y\nE       assert 0 == 3\n\nmain.py:41: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "main"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Pro-Eugene.local"
+  }, {
+    "name" : "thread",
+    "value" : "3565-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "x",
+    "value" : "0"
+  }, {
+    "name" : "y",
+    "value" : "3"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "d6cc6762fcad0383.json",
+  "parameterValues" : [ "0", "3" ]
+}
