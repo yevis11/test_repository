@@ -71,6 +71,17 @@ def test_skip():
 
 
 
+# NEW FEATURE
+@allure.feature('test feature 1 ')
+@allure.severity('Major')
+@allure.issue('jira link')
+@allure.testcase('https://testrail.ru')
+#параметризация нескольких параметров
+@pytest.mark.parametrize("test_input, expected", [("3+5",  8), ('6+9', 15), ('5*5', 30)],
+                         ids= ['Three plus five', 'six plus nine', 'five by five'])
+def test_parametrize_with_multiply_mark(test_input, expected):
+    assert eval(test_input) == expected
+
 
 
 
